@@ -9,13 +9,6 @@ matrix:
   include:
     - os: osx
       osx_image: xcode9.4
-#      pandoc: false
-#      before_install:
-#        - curl -fLo /tmp/pandoc-1.12-1.dmg https://github.com/jgm/pandoc/releases/download/1.12/pandoc-1.12-1.dmg
-#        - sudo hdiutil attach /tmp/pandoc-1.12-1.dmg -mountpoint /Volumes/pandoc
-#        - sudo installer -pkg "/Volumes/pandoc/pandoc-1.12.pkg" -allowUntrusted -target /
-#        - sudo hdiutil detach /Volumes/pandoc
-#      env: PANDOC='mac-cran'
     - os: linux
       before_install:
         - sudo timedatectl set-timezone Asia/Taipei  # Set timezone to Taiwan
@@ -39,6 +32,6 @@ r_github_packages:
 #    github-token: $GH_TOKEN  
 #    keep-history: false
 #    local-dir: docs    # Web output directory
-    on:
-      branch: master
-      condition: $TRAVIS_OS_NAME = linux
+#    on:
+#      branch: master
+#      condition: $TRAVIS_OS_NAME = linux

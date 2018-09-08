@@ -1,4 +1,6 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+[![Build Status](https://travis-ci.org/liao961120/linguisticsdown.svg?branch=master)](https://travis-ci.org/liao961120/linguisticsdown)
+
 linguisticsdown
 ===============
 

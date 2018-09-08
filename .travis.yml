@@ -21,8 +21,8 @@ r_github_packages:
 #  - Rscript -e 'covr::codecov()'
 
 
-#before_deploy:
-#  - bash deploy.sh
+before_deploy:
+  - Rscript build_site.R
 
 
 # deploy docs/ and master branch to branch 'gh-pages' & 'win-build'

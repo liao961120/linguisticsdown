@@ -1,6 +1,6 @@
 #' Insert IPA symbols with Shiny app
 #'
-#' `writeIPA` opens a shiny gadget in the viewer pane of RStudio
+#' \code{writeIPA} opens a shiny gadget in the viewer pane of RStudio
 #' to let users insert a sequence of IPA symbols into
 #' the source pane or console.
 #' Users can choose to use phonetic features (such as
@@ -9,9 +9,9 @@
 #' symbols or use the
 #' \href{https://en.wikipedia.org/wiki/X-SAMPA}{X-SAMPA}
 #' input method directly. Note that due to the special
-#' meanings of backslash(`\\`) in programming,
-#' \strong{backslashes(`\\`) in X-SAMPA symbols are
-#' replaced with slashes(`/`)}.
+#' meanings of backslash(\code{\\}) in programming,
+#' \strong{backslashes(\code{\\}) in X-SAMPA symbols are
+#' replaced with slashes(\code{/})}.
 #'
 #' @return Inserted plain text at the cursor returned by
 #'   \link[rstudioapi]{insertText}.
@@ -89,9 +89,9 @@ writeIPA <- function() {
         return_val <- clean_dscrb(input$feat)
         stopApp(rstudioapi::insertText(return_val))
       } else {
-        return_val <- paste0("`r linguisticsdown::cond_cmpl(",
+        return_val <- paste0('`r linguisticsdown::cond_cmpl("',
                              clean_dscrb(input$feat),
-                             ")`")
+                             '")`')
       }
       stopApp(rstudioapi::insertText(return_val))
     })
@@ -102,9 +102,9 @@ writeIPA <- function() {
         return_val <- xsampa2ipa(input$text)
         stopApp(rstudioapi::insertText(return_val))
       } else {
-        return_val <- paste0("`r linguisticsdown::cond_cmpl(",
+        return_val <- paste0('`r linguisticsdown::cond_cmpl("',
                              xsampa2ipa(input$text),
-                             ")`")
+                             '")`')
       }
       stopApp(rstudioapi::insertText(return_val))
     })

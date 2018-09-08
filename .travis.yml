@@ -25,7 +25,7 @@ before_deploy:
   - Rscript build_site.R
 
 
-# deploy docs/ and master branch to branch 'gh-pages' & 'win-build'
+# deploy docs/ and master branch to branch 'gh-pages'
 deploy:
   - provider: pages    # Deploy master/docs to branch gh-pages
     skip-cleanup: true

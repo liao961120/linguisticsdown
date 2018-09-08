@@ -1,0 +1,33 @@
+\usepackage{fontspec}
+
+%% Pandoc can only set 10, 11, 12 pt
+%% uncomment below to set fontsize
+%\usepackage[fontsize=13pt]{scrextend}
+
+%\setmainfont{Calibri} % Set main font for latin characters
+
+\setlength{\parskip}{0.15cm} % Set space between paragraphs
+\linespread{1.2}\selectfont % Set line height
+
+%% Special font for IPA
+%% Make sure "Doulos SIL" is installed on your computer
+%% For other typefaces supporting IPA symbols, see
+%% https://en.wikipedia.org/wiki/International_Phonetic_Alphabet#Typefaces
+\newfontfamily\ipa{Doulos SIL} % Font for IPA symbols
+\DeclareTextFontCommand{\ipatext}{\ipa}
+
+
+
+%%%         Section for CJK Characters                   %%%
+%%%   You may want to uncomment the code below if        %%%
+%%%   you're writing this document with CJK characters   %%%
+
+%\usepackage{xeCJK}  % Uncomment for using CJK characters
+%% Set main font for CJK characters
+%% Make sure your system has the font set
+%\setCJKmainfont[
+%	BoldFont={HanWangHeiHeavy}  % Set font for CJK boldface
+%    ]{標楷體}    % Set font for normal CJK
+%% Some Traditional Chinese fonts: AR PL KaitiM Big5, PingFang TC, Noto Sans CJK TC
+%\XeTeXlinebreaklocale "zh"
+%\XeTeXlinebreakskip = 0pt plus 1pt

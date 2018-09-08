@@ -1,0 +1,41 @@
+---
+title: "Template Title"
+author: "Your Name"
+date: "The Date"
+output:
+  bookdown::html_document2:
+    number_sections: no
+    toc: no
+  bookdown::pdf_document2:
+    number_sections: no
+    toc: no
+    latex_engine: xelatex
+    includes:
+      in_header: header.tex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## A Template Compatible with IPA Symbols
+
+This is an R Markdown template bundled with the package [linguisticsdown](https://liao961120.github.io/linguisticsdown).
+You can insert IPA symbols in the document easily with a shiny gadget by calling `linguisticsdown::writeIPA()`.
+
+By chosing "**Support LaTeX**" in the shiny gadget, you can compile this R Markdown document to both PDF and HTML with proper IPA symbols rendered.
+
+## Fonts Supporting IPA Symbols
+
+Make sure you have **at least one font supporting IPA symbols on your computer** so that IPA symbols can be properly rendered.
+**Doulos SIL** is recommended and can be freely dowloaded [here](https://software.sil.org/doulos/download/).
+
+For other fonts supporting IPA symbols, see [wikipedia](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet#Typefaces) for details.
+
+**If you use fonts other than "Doulos SIL", make sure to set that font in line 16 of `header.tex`:**
+
+```tex
+\newfontfamily\ipa{font_name} 
+```
+
+

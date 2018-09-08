@@ -29,10 +29,10 @@ clean_dscrb <- function(x) {
 
 #' Conditional Compilation
 #'
-#' `cond_cmpl` wrap a sequence of IPA string with LaTeX code
+#' \code{cond_cmpl} wrap a sequence of IPA string with LaTeX code
 #' in R Markdown document when compiled to LaTeX.
 #' When compiled to HTML, returns the original sequence. Call
-#' `rmarkdown::draft("file.Rmd", "support_ipa", package = "linguisticsdown")`
+#' \code{rmarkdown::draft("file.Rmd", "support_ipa", package = "linguisticsdown")}
 #' for details.
 #'
 #' @param ipa String. A sequence of IPA symbols.

@@ -16,10 +16,11 @@ devtools::install_github("liao961120/linguisticsdown")
 Example
 -------
 
-This is a basic example which shows you how to solve a common problem:
+Lunch shiny gadget for inserting IPA symbols:
 
 ``` r
-## basic example code
+library(linguisticsdown)
+writeIPA()
 ```
 
 To Do

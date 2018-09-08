@@ -26,12 +26,12 @@ before_deploy:
 
 
 # deploy docs/ and master branch to branch 'gh-pages' & 'win-build'
-#deploy:
-#  - provider: pages    # Deploy master/docs to branch gh-pages
-#    skip-cleanup: true
-#    github-token: $GH_TOKEN  
-#    keep-history: false
-#    local-dir: docs    # Web output directory
-#    on:
-#      branch: master
-#      condition: $TRAVIS_OS_NAME = linux
+deploy:
+  - provider: pages    # Deploy master/docs to branch gh-pages
+    skip-cleanup: true
+    github-token: $GH_TOKEN  
+    keep-history: false
+    local-dir: docs    # Web output directory
+    on:
+      branch: master
+      condition: $TRAVIS_OS_NAME = linux

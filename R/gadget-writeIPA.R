@@ -31,21 +31,30 @@ writeIPA <- function() {
       # Tab f: features to IPA
       miniTabPanel("Features", icon = icon("search"),
         miniContentPanel(
-          selectInput("feat",
-                    label = "Search:",
-                    choices = ipafeatures,
-                    multiple = TRUE,
-                    selectize = TRUE),
-          p("(e.g. ", em("plosive"), ", ", em("schwa"), ")"),
-          hr(),
-          fluidRow(
-            column(3, verbatimTextOutput("feat2ipa"))
+          div(class = "row",
+            div(class = "col-md-4 col-xs-6",
+              selectInput("feat",
+                        label = "Search:",
+                        choices = ipafeatures,
+                        multiple = TRUE,
+                        selectize = TRUE),
+              p("(e.g. ", em("plosive"), ", ", em("schwa"), ")")
             ),
-          radioButtons("feat_format", "Insert Type",
-                       choices = c("Plain symbols" = "html",
-                                   "Support LaTeX" = "latex"),
-                       selected = "html"),
-          actionButton("write_features", "Write", class = "btn-primary"),
+            div(class = "col-md-4 col-xs-6",
+              radioButtons("feat_format", "Insert Type",
+                           choices = c("Plain symbols" = "html",
+                                       "Support LaTeX" = "latex"),
+                           selected = "html")
+            )
+          ),
+          hr(),
+          fluidRow(div(class = "col-md-4 col-xs-6",
+                       verbatimTextOutput("feat2ipa")),
+                   div(class = "col-md-4 col-xs-6",
+                     actionButton("write_features", "Write",
+                           class = "btn-primary")
+                     )
+                   ),
           tabf_infotext  # Saved in data-raw/ui-text/
           )
         ),
@@ -92,8 +101,8 @@ writeIPA <- function() {
         return_val <- paste0('`r linguisticsdown::cond_cmpl("',
                              clean_dscrb(input$feat),
                              '")`')
+        stopApp(rstudioapi::insertText(return_val))
       }
-      stopApp(rstudioapi::insertText(return_val))
     })
 
     ## Tab x: xsampa
@@ -105,8 +114,8 @@ writeIPA <- function() {
         return_val <- paste0('`r linguisticsdown::cond_cmpl("',
                              xsampa2ipa(input$text),
                              '")`')
+        stopApp(rstudioapi::insertText(return_val))
       }
-      stopApp(rstudioapi::insertText(return_val))
     })
 
     # Handel Cancel button

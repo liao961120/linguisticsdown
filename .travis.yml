@@ -1,0 +1,44 @@
+# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
+
+language: R
+sudo: false
+cache: packages
+pandoc_version: 1.19.2.1
+
+matrix:
+  include:
+    - os: osx
+      osx_image: xcode9.4
+#      pandoc: false
+#      before_install:
+#        - curl -fLo /tmp/pandoc-1.12-1.dmg https://github.com/jgm/pandoc/releases/download/1.12/pandoc-1.12-1.dmg
+#        - sudo hdiutil attach /tmp/pandoc-1.12-1.dmg -mountpoint /Volumes/pandoc
+#        - sudo installer -pkg "/Volumes/pandoc/pandoc-1.12.pkg" -allowUntrusted -target /
+#        - sudo hdiutil detach /Volumes/pandoc
+#      env: PANDOC='mac-cran'
+    - os: linux
+      before_install:
+        - sudo timedatectl set-timezone Asia/Taipei  # Set timezone to Taiwan
+
+r_github_packages:
+  - r-lib/covr
+  - r-lib/pkgdown
+
+#after_success:
+#  - Rscript -e 'covr::codecov()'
+
+
+#before_deploy:
+#  - bash deploy.sh
+
+
+# deploy docs/ and master branch to branch 'gh-pages' & 'win-build'
+#deploy:
+#  - provider: pages    # Deploy master/docs to branch gh-pages
+#    skip-cleanup: true
+#    github-token: $GH_TOKEN  
+#    keep-history: false
+#    local-dir: docs    # Web output directory
+    on:
+      branch: master
+      condition: $TRAVIS_OS_NAME = linux

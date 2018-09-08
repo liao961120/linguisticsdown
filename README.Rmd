@@ -31,3 +31,9 @@ This is a basic example which shows you how to solve a common problem:
 ```{r example}
 ## basic example code
 ```
+
+## To Do
+
+1. RStudio Addin
+1. Draw Syntax Tree
+

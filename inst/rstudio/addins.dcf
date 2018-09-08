@@ -1,0 +1,4 @@
+Name: Insert IPA Symbols
+Description: Inserts a sequence of IPA Symbols at the cursor position.
+Binding: writeIPA
+Interactive: true

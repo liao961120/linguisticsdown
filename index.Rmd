@@ -31,6 +31,7 @@ devtools::install_github("liao961120/linguisticsdown")
 
 ## Usage
 
+
 ### Write IPA symbols by Phonetic Features
 
 
@@ -40,6 +41,16 @@ devtools::install_github("liao961120/linguisticsdown")
 ### Write IPA symbols with [X-SAMPA](https://en.wikipedia.org/wiki/X-SAMPA)
 
 ![](man/figs/xsampa.gif){.big}
+
+
+### Other IDE Users
+
+For users that don't use RStudio, run:
+```{r eval=FALSE}
+linguisticsdown::writeIPA()
+```
+to lunch the Shiny gadget.
+
 
 ### Shiny Live Demo
 

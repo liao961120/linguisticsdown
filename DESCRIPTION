@@ -23,4 +23,5 @@ Imports: dplyr,
     rstudioapi,
     DT
 RoxygenNote: 6.1.0
-Suggests: pkgdown
+Suggests: pkgdown,
+    rmarkdown

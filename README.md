@@ -26,7 +26,7 @@ Usage
 
 ### Shiny Live Demo
 
-Visit [this site](https://liao961120.shinyapps.io/IPA-Easily-Written/) to use the Shiny Gadget interactively. Due to limits of [shinyapps.io free plan](https://support.rstudio.com/hc/en-us/articles/217592947-What-are-the-limits-of-the-shinyapps-io-Free-plan-), the web site may not work.
+Visit [this site](https://liao961120.shinyapps.io/IPA-Easily-Written/) to use the Shiny Gadget interactively.
 
 Conditional Compilation
 -----------------------

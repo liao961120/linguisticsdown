@@ -7,3 +7,4 @@
 ^docs$
 ^build_site\.R$
 ^R/experimental/$
+^LICENSE$

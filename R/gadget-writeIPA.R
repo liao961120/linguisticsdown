@@ -29,7 +29,7 @@ writeIPA <- function() {
                    right = NULL),
     miniTabstripPanel(
       # Tab f: features to IPA
-      miniTabPanel("Features", icon = icon("search"),
+      miniTabPanel("Features", icon = icon("tag", lib = "glyphicon"),
         miniContentPanel(
           div(class = "row",
             div(class = "col-md-3 col-md-offset-1 col-xs-6",
@@ -89,7 +89,17 @@ writeIPA <- function() {
               )
             ) # end fluidRow
           ) # end miniContentPanel
-        ) # end miniTabPanel (tabx)
+        ), # end miniTabPanel (tabx)
+
+      # Tabl: IPA table
+      miniTabPanel("Lookup", icon = icon("search"),
+        miniContentPanel(
+            DT::dataTableOutput('lookup',
+                                height = "100%")
+          )
+      )
+
+
       ) # end miniTabstripPanel
   ) # end ui
 
@@ -104,6 +114,11 @@ writeIPA <- function() {
     output$feat2ipa <- renderPrint({
       cat(clean_dscrb(input$feat))
       })
+
+    # Tab l: IPA lookup table
+    output$lookup <- DT::renderDT(ipa_xsampa, rownames = FALSE,
+                                  options = list(pageLength = 5,
+                                                 dom = 'ftp'))
 
     # Handle the 'Write' buttom being pressed.
     ## Tab f: features
@@ -131,6 +146,7 @@ writeIPA <- function() {
         stopApp(rstudioapi::insertText(return_val))
       }
     })
+
 
     # Handel Cancel button
     observeEvent(input$cancel, {

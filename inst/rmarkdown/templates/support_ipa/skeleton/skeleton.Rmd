@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = TRUE)
 This is an R Markdown template bundled with the package [linguisticsdown](https://liao961120.github.io/linguisticsdown).
 You can insert IPA symbols in the document easily with a shiny gadget by calling `linguisticsdown::writeIPA()`.
 
-By chosing "**Support LaTeX**" in the shiny gadget, you can compile this R Markdown document to both PDF and HTML with proper IPA symbols rendered.
+By chosing "**LaTeX**" in "**Insert Format**" in the shiny gadget, you can compile this R Markdown document to both PDF and HTML with proper IPA symbols rendered.
 
 ## Fonts Supporting IPA Symbols
 

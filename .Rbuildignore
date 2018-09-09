@@ -8,3 +8,4 @@
 ^build_site\.R$
 ^R/experimental/$
 ^LICENSE$
+^man/figs/$

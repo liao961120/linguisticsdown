@@ -32,51 +32,65 @@ writeIPA <- function() {
       miniTabPanel("Features", icon = icon("search"),
         miniContentPanel(
           div(class = "row",
-            div(class = "col-md-4 col-xs-6",
+            div(class = "col-md-3 col-md-offset-1 col-xs-6",
               selectInput("feat",
                         label = "Search:",
                         choices = ipafeatures,
                         multiple = TRUE,
                         selectize = TRUE),
-              p("(e.g. ", em("plosive"), ", ", em("schwa"), ")")
-            ),
-            div(class = "col-md-4 col-xs-6",
-              radioButtons("feat_format", "Insert Type",
-                           choices = c("Plain symbols" = "html",
-                                       "Support LaTeX" = "latex"),
-                           selected = "html")
-            )
-          ),
+              p(em("Type to search matched phonetic features."),
+                style = "font-size: 0.8em")
+            ), # end div col1
+            div(class = "col-md-5 col-md-offset-2 col-xs-6",
+                h6(strong('Output:')),
+                verbatimTextOutput("feat2ipa"),
+                br(),
+                radioButtons("feat_format", "Insert Format",
+                             choices = c("Plain symbols" = "html",
+                                         "LaTeX" = "latex"),
+                             selected = "html")
+            ) # end div col2
+          ), # end div.row
           hr(),
-          fluidRow(div(class = "col-md-4 col-xs-6",
-                       verbatimTextOutput("feat2ipa")),
-                   div(class = "col-md-4 col-xs-6",
-                     actionButton("write_features", "Write",
-                           class = "btn-primary")
-                     )
-                   ),
-          tabf_infotext  # Saved in data-raw/ui-text/
-          )
-        ),
+          fluidRow(div(class = "col-md-4 col-md-offset-1 col-xs-12",
+                       actionButton("write_features", "Write",
+                                    class = "btn-success"),
+                       tabf_infotext  # Saved in data-raw/ui-text/
+                       )
+                   ) # end fluidRow
+          ) # end miniContentPanel
+        ), # end miniTabPanel
+
       # Tab x: xsampa to IPA
       miniTabPanel("XSAMPA", icon = icon("table"),
         miniContentPanel(
-          textInput("text",
-                    label = "X-SAMPA to IPA:",
-                    value = "p _h A"),
-          tabx_infotext, # Saved in data-raw/ui-text/
+          div(class = "row",
+            div(class = "col-md-3 col-md-offset-1 col-xs-6",
+              textInput("text",
+                        label = "X-SAMPA to IPA:",
+                        value = "p _h A"),
+              tabx_infotext  # Saved in data-raw/ui-text/
+            ),
+            div(class = "col-md-5 col-md-offset-2 col-xs-6",
+                h6(strong('Output:')),
+                verbatimTextOutput("xsamp2ipa"),
+                br(),
+                radioButtons("xsampa_format", "Insert Format",
+                       choices = c("Plain symbols" = "html",
+                                   "LaTeX" = "latex"),
+                       selected = "html")
+            )
+          ), # end div.row
           hr(),
           fluidRow(
-            column(3, verbatimTextOutput("xsamp2ipa"))
-            ),
-          radioButtons("xsampa_format", "Insert Type",
-                       choices = c("Plain symbols" = "html",
-                                   "Support LaTeX" = "latex"),
-                       selected = "html"),
-          actionButton("write_xsampa", "Write", class = "btn-primary")
-          )
-        )
-    )
+            div(class = "col-md-5 col-md-offset-1 col-xs-6",
+              actionButton("write_xsampa", "Write",
+                           class = "btn-success")
+              )
+            ) # end fluidRow
+          ) # end miniContentPanel
+        ) # end miniTabPanel (tabx)
+      ) # end miniTabstripPanel
   ) # end ui
 
   server <- function(input, output, session) {

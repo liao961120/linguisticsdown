@@ -9,6 +9,7 @@ output:
 ```{r, echo = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
+  eval = FALSE,
   comment = "#>",
   fig.path = "README-"
 )
@@ -22,18 +23,22 @@ knitr::opts_chunk$set(
 The goal of linguisticsdown is to support Linguistics-related doucument writing in R Markdown, such as providing a [Shiny Gadget](https://shiny.rstudio.com/articles/gadgets.html) to write and insert IPA symbols easily and functions to draw syntax tree (not implemented yet).
 
 ## Installation
-```{r eval=FALSE}
+```{r}
 devtools::install_github("liao961120/linguisticsdown")
 ```
 
 
 ## Example
 
-Lunch shiny gadget for inserting IPA symbols:
-
-```{r example, eval=FALSE}
+Launch shiny gadget for inserting IPA symbols:
+```{r example}
 library(linguisticsdown)
 writeIPA()
+```
+
+Lookup IPA symbols' phonetic features and X-SAMPA input:
+```{r}
+searchIPA()
 ```
 
 

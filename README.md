@@ -4,7 +4,7 @@
 linguisticsdown
 ===============
 
-The goal of linguisticsdown is to ...
+The goal of linguisticsdown is to support Linguistics-related doucument writing in R Markdown, such as providing a [Shiny Gadget](https://shiny.rstudio.com/articles/gadgets.html) to write and insert IPA symbols easily and functions to draw syntax tree (not implemented yet).
 
 Installation
 ------------
@@ -26,5 +26,4 @@ writeIPA()
 To Do
 -----
 
-1.  RStudio Addin
-2.  Draw Syntax Tree
+1.  Draw Syntax Tree

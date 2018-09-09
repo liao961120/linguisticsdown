@@ -39,6 +39,5 @@ writeIPA()
 
 ## To Do
 
-1. RStudio Addin
 1. Draw Syntax Tree
 

@@ -18,11 +18,11 @@ Usage
 
 ### Write IPA symbols by Phonetic Features
 
-<img src="man/figs/features.gif" width="70%" />
+<img src="man/figs/features.gif" width="60%" />
 
 ### Write IPA symbols with [X-SAMPA](https://en.wikipedia.org/wiki/X-SAMPA)
 
-<img src="man/figs/xsampa.gif" width="70%" />
+<img src="man/figs/xsampa.gif" width="60%" />
 
 ### Shiny Live Demo
 
@@ -43,11 +43,11 @@ rmarkdown::draft("name_your_file.Rmd",
 
 , or if you use [RStudio](https://www.rstudio.com/):
 
-<img src="man/figs/template.gif" width="70%" />
+<img src="man/figs/template.gif" width="60%" />
 
 Then, make sure **"LaTeX" in "Insert Format" is selected** when inserting IPA symbols:
 
-<img src="man/figs/latex.gif" width="70%" />
+<img src="man/figs/latex.gif" width="60%" />
 
 This option wraps the IPA symbols with the function `cond_cmpl()`, which wraps latex code around IPA symbols when compiled to LaTeX but leaves the symbols untouched when compiled to HTML formats. Hence, you can compiled to any format with properly rendered IPA symbols without changing the source file.
 

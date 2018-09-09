@@ -1,9 +1,8 @@
 library(shiny)
 
 tabx_infotext <-p(
-  'Type in X-SAMPA symbols and use ',
-  strong('slash'), '(/)', ' instead of ',
-  strong('backslash'), '(\\).',
+  'Use ', strong('slash'), '(/)', ' instead of ',
+  strong('backslash'), '(\\) in X-SAMPA.',
   br(),
   'There must be',
   strong('one space character between two symbols'), '.'

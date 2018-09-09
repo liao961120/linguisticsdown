@@ -117,7 +117,7 @@ writeIPA <- function() {
 
     # Tab l: IPA lookup table
     output$lookup <- DT::renderDT(ipa_xsampa, rownames = FALSE,
-                                  options = list(pageLength = 5,
+                                  options = list(pageLength = 4,
                                                  dom = 'ftp'))
 
     # Handle the 'Write' buttom being pressed.
@@ -155,6 +155,7 @@ writeIPA <- function() {
 
   } # end server
 
-  runGadget(ui, server, stopOnCancel = FALSE)
+  runGadget(ui, server, stopOnCancel = FALSE,
+            viewer = paneViewer(minHeight = 385))
 }
 

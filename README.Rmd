@@ -10,6 +10,7 @@ output:
 knitr::opts_chunk$set(
 	echo = TRUE,
 	fig.path = "README-",
+	out.width = "80%",
 	message = FALSE,
 	warning = FALSE,
 	collapse = TRUE,
@@ -33,11 +34,13 @@ devtools::install_github("liao961120/linguisticsdown")
 ## Usage
 
 ### Write IPA symbols by Phonetic Features
+
 ```{r echo=FALSE}
 include_graphics("man/figs/features.gif")
 ```
 
 ### Write IPA symbols with [X-SAMPA](https://en.wikipedia.org/wiki/X-SAMPA)
+
 ```{r echo=FALSE}
 include_graphics("man/figs/xsampa.gif")
 ```
@@ -61,11 +64,13 @@ rmarkdown::draft("name_your_file.Rmd",
 ```
 
 , or if you use [RStudio](https://www.rstudio.com/):
+
 ```{r echo=FALSE}
 include_graphics("man/figs/template.gif")
 ```
 
 Then, make sure **"LaTeX" in "Insert Format" is selected** when inserting IPA symbols:
+
 ```{r echo=FALSE}
 include_graphics("man/figs/latex.gif")
 ```

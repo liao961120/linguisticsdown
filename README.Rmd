@@ -10,7 +10,6 @@ output:
 knitr::opts_chunk$set(
 	echo = TRUE,
 	fig.path = "README-",
-	out.width = "60%",
 	message = FALSE,
 	warning = FALSE,
 	collapse = TRUE,
@@ -35,15 +34,13 @@ devtools::install_github("liao961120/linguisticsdown")
 
 ### Write IPA symbols by Phonetic Features
 
-```{r echo=FALSE}
-include_graphics("man/figs/features.gif")
-```
+
+![](man/figs/features.gif){.big}
+
 
 ### Write IPA symbols with [X-SAMPA](https://en.wikipedia.org/wiki/X-SAMPA)
 
-```{r echo=FALSE}
-include_graphics("man/figs/xsampa.gif")
-```
+![](man/figs/xsampa.gif){.big}
 
 ### Shiny Live Demo
 
@@ -57,7 +54,7 @@ depending on the font chosen to compile LaTeX to PDF.
 See [wikipedia](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet#Typefaces) for a list of fonts supporting IPA symbols.
 
 To overcome this problem, you can use a document template provided by **linguisticsdown** by calling:
-```{r eval=FALSE}
+```{r eval=FALSE, class.output="big"}
 rmarkdown::draft("name_your_file.Rmd",
                  template = "support_ipa",
                  package = "linguisticsdown")
@@ -65,15 +62,11 @@ rmarkdown::draft("name_your_file.Rmd",
 
 , or if you use [RStudio](https://www.rstudio.com/):
 
-```{r echo=FALSE}
-include_graphics("man/figs/template.gif")
-```
+![](man/figs/template.gif){.big}
 
 Then, make sure **"LaTeX" in "Insert Format" is selected** when inserting IPA symbols:
 
-```{r echo=FALSE}
-include_graphics("man/figs/latex.gif")
-```
+![](man/figs/latex.gif){.big}
 
 This option wraps the IPA symbols with the function
 `cond_cmpl()`, which wraps latex code around IPA symbols when
@@ -91,4 +84,14 @@ template `support_ipa` for more details.
 ## To Do
 
 1. Draw Syntax Tree
+
+
+<style>
+img.big {
+border-radius: 10px;
+box-shadow: 2px 4px 6px rgba(0, 0, 0, .5);
+margin-bottom: 1em;
+width: 67%
+}
+</style>
 

@@ -27,7 +27,7 @@ Lookup IPA symbols with phonetic features or X-SAMPA
 searchIPA()
 
 # Search with feature
-searchIPA("plosive", "feature")
+searchIPA("bilabial", "feature")
 
 # Search with X-SAMPA
 searchIPA("_h", "xsampa")

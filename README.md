@@ -18,11 +18,11 @@ Usage
 
 ### Write IPA symbols by Phonetic Features
 
-<img src="man/figs/features.gif" class="big" />
+<img src="man/figs/features.gif" style="border-radius: 10px;box-shadow: 2px 4px 6px rgba(0, 0, 0, .5);margin-bottom: 1em;width: 67%" />
 
 ### Write IPA symbols with [X-SAMPA](https://en.wikipedia.org/wiki/X-SAMPA)
 
-<img src="man/figs/xsampa.gif" class="big" />
+<img src="man/figs/xsampa.gif" style="border-radius: 10px;box-shadow: 2px 4px 6px rgba(0, 0, 0, .5);margin-bottom: 1em;width: 67%" />
 
 ### Shiny Live Demo
 
@@ -43,11 +43,11 @@ rmarkdown::draft("name_your_file.Rmd",
 
 , or if you use [RStudio](https://www.rstudio.com/):
 
-<img src="man/figs/template.gif" class="big" />
+<img src="man/figs/template.gif" style="border-radius: 10px;box-shadow: 2px 4px 6px rgba(0, 0, 0, .5);margin-bottom: 1em;width: 67%" />
 
 Then, make sure **"LaTeX" in "Insert Format" is selected** when inserting IPA symbols:
 
-<img src="man/figs/latex.gif" class="big" />
+<img src="man/figs/latex.gif" style="border-radius: 10px;box-shadow: 2px 4px 6px rgba(0, 0, 0, .5);margin-bottom: 1em;width: 67%" />
 
 This option wraps the IPA symbols with the function `cond_cmpl()`, which wraps latex code around IPA symbols when compiled to LaTeX but leaves the symbols untouched when compiled to HTML formats. Hence, you can compiled to any format with properly rendered IPA symbols without changing the source file.
 
@@ -57,12 +57,3 @@ To Do
 -----
 
 1.  Draw Syntax Tree
-
-<style>
-img.big {
-border-radius: 10px;
-box-shadow: 2px 4px 6px rgba(0, 0, 0, .5);
-margin-bottom: 1em;
-width: 67%
-}
-</style>

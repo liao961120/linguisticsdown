@@ -1,6 +1,6 @@
 Package: linguisticsdown
 Title: Easy Linguistics Document Writing with R Markdown
-Version: 1.0.0.9000
+Version: 0.0.0.9000
 Authors@R: person("Yongfu", "Liao", , "liao961120@gmail.com", c("aut", "cre", "cph"))
 Description: Provide Shiny gadget to search, type, and insert IPA symbols into 
     documents or scripts, requiring only knowledge about phonetics or X-SAMPA.
@@ -20,6 +20,7 @@ Imports: dplyr,
     magrittr,
     miniUI,
     knitr,
-    rstudioapi
+    rstudioapi,
+    DT
 RoxygenNote: 6.1.0
 Suggests: pkgdown

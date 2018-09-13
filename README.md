@@ -22,3 +22,8 @@ To Do
 -----
 
 1.  Draw Syntax Tree
+
+Data Source
+-----------
+
+Thanks [David R. Mortensen](https://github.com/dmort27) for his [IPA data](https://github.com/dmort27/epitran/blob/master/epitran/data/ipa-xsampa.csv).

@@ -32,15 +32,6 @@ writeIPA <- function() {
       miniTabPanel("Features", icon = icon("tag", lib = "glyphicon"),
         miniContentPanel(
           div(class = "row",
-            div(class = "col-md-3 col-md-offset-1 col-xs-6",
-              selectInput("feat",
-                        label = "Search:",
-                        choices = ipafeatures,
-                        multiple = TRUE,
-                        selectize = TRUE),
-              p(em("Type to search matched phonetic features."),
-                style = "font-size: 0.8em")
-            ), # end div col1
             div(class = "col-md-5 col-md-offset-2 col-xs-6",
                 h6(strong('Output:')),
                 verbatimTextOutput("feat2ipa"),
@@ -49,7 +40,16 @@ writeIPA <- function() {
                              choices = c("Plain symbols" = "html",
                                          "LaTeX" = "latex"),
                              selected = "html")
-            ) # end div col2
+            ), # end div col2
+            div(class = "col-md-3 col-md-offset-1 col-xs-6",
+              selectInput("feat",
+                        label = "Search:",
+                        choices = ipafeatures,
+                        multiple = TRUE,
+                        selectize = TRUE),
+              p(em("Type to search matched phonetic features."),
+                style = "font-size: 0.8em")
+            ) # end div col1
           ), # end div.row
           hr(),
           fluidRow(div(class = "col-md-4 col-md-offset-1 col-xs-12",
@@ -65,12 +65,6 @@ writeIPA <- function() {
       miniTabPanel("XSAMPA", icon = icon("table"),
         miniContentPanel(
           div(class = "row",
-            div(class = "col-md-3 col-md-offset-1 col-xs-6",
-              textInput("text",
-                        label = "X-SAMPA to IPA:",
-                        value = "p _h A"),
-              tabx_infotext  # Saved in data-raw/ui-text/
-            ),
             div(class = "col-md-5 col-md-offset-2 col-xs-6",
                 h6(strong('Output:')),
                 verbatimTextOutput("xsamp2ipa"),
@@ -79,6 +73,12 @@ writeIPA <- function() {
                        choices = c("Plain symbols" = "html",
                                    "LaTeX" = "latex"),
                        selected = "html")
+            ),
+            div(class = "col-md-3 col-md-offset-1 col-xs-6",
+              textInput("text",
+                        label = "X-SAMPA to IPA:",
+                        value = "p _h A"),
+              tabx_infotext  # Saved in data-raw/ui-text/
             )
           ), # end div.row
           hr(),

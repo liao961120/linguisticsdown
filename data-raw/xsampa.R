@@ -1,8 +1,9 @@
 library(stringr)
 library(dplyr)
-dat <- read.csv("data-raw/ipa-xsampa-modified.csv",
-                stringsAsFactors = F) %>%
-  mutate(X.SAMPA2 = str_replace_all(X.SAMPA,
+library(readr)
+dat <- read_csv("data-raw/ipa-xsampa-modified.csv",
+                locale = locale(encoding = "UTF-8")) %>%
+  mutate(X.SAMPA2 = str_replace_all(`X-SAMPA`,
                                     fixed("\\"), "/")) %>%
   select(IPA, X.SAMPA2, Name) %>%
   rename('XSAMPA' = X.SAMPA2)

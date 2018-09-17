@@ -22,7 +22,8 @@ Imports: dplyr,
     miniUI,
     knitr,
     rstudioapi,
-    DT
+    DT,
+    readr
 RoxygenNote: 6.1.0
 Suggests: pkgdown,
     rmarkdown

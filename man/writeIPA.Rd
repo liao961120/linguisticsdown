@@ -11,7 +11,7 @@ writeIPA()
 }
 \value{
 Inserted plain text at the cursor returned by
-  \link[rstudioapi]{insertText}.
+  \code{\link[rstudioapi]{insertText}}.
 }
 \description{
 \code{writeIPA} opens a shiny gadget in the viewer pane of RStudio
@@ -19,7 +19,7 @@ to let users insert a sequence of IPA symbols into
 the source pane or console.
 Users can choose to use phonetic features (such as
 \emph{aspirated}, \emph{schwa},
-\emph{vl}(voiceless) / \emph{vd}(voiced), etc.) to find IPA
+\emph{vl}(voiceless), \emph{vd}(voiced), etc.) to find IPA
 symbols or use the
 \href{https://en.wikipedia.org/wiki/X-SAMPA}{X-SAMPA}
 input method directly. Note that due to the special

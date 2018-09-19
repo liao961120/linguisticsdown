@@ -16,7 +16,8 @@ r_github_packages:
   - r-lib/covr
   - r-lib/pkgdown
 
-#after_success:
+after_success:
+   - Rscript -e 'devtools::check(manual = TRUE)'
 #  - Rscript -e 'covr::codecov()'
 
 

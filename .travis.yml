@@ -8,7 +8,6 @@ pandoc_version: 1.19.2.1
 matrix:
   include:
     - os: osx
-      osx_image: xcode9.4
     - os: linux
       before_install:
         - sudo timedatectl set-timezone Asia/Taipei  # Set timezone to Taiwan

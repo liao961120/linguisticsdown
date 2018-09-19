@@ -23,6 +23,7 @@ A data frame with 3 rows.
 Lookup IPA symbols with phonetic features or X-SAMPA
 }
 \examples{
+\dontrun{
 # Check all IPA symbols
 searchIPA()
 
@@ -31,5 +32,5 @@ searchIPA("bilabial", "feature")
 
 # Search with X-SAMPA
 searchIPA("_h", "xsampa")
-
+}
 }

@@ -10,3 +10,4 @@
 ^LICENSE$
 ^man/figs/$
 ^index\.Rmd$
+^cran-comments\.md$

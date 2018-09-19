@@ -9,3 +9,4 @@
 ^R/experimental/$
 ^LICENSE$
 ^man/figs/$
+^index\.Rmd$

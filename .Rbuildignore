@@ -11,3 +11,4 @@
 ^man/figs/$
 ^index\.Rmd$
 ^cran-comments\.md$
+^man/figs$

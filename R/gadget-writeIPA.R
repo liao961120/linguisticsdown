@@ -1,19 +1,19 @@
 #' Insert IPA symbols with Shiny app
 #'
-#' \code{writeIPA} opens a shiny gadget in the viewer pane of RStudio
-#' to let users insert a sequence of IPA symbols into
-#' the source pane or console.
+#' \code{writeIPA} opens a shiny gadget in the viewer pane
+#' of RStudio to let users insert a sequence of IPA
+#' symbols into the source pane or console.
 #' Users can choose to use phonetic features (such as
 #' \emph{aspirated}, \emph{schwa},
-#' \emph{vl}(voiceless), \emph{vd}(voiced), etc.) to find IPA
-#' symbols or use the
+#' \emph{vl} for voiceless, \emph{vd} for voiced, etc.) to
+#' find IPA symbols or use the
 #' \href{https://en.wikipedia.org/wiki/X-SAMPA}{X-SAMPA}
 #' input method directly. Note that due to the special
 #' meanings of backslash(\code{\\}) in programming,
 #' \strong{backslashes(\code{\\}) in X-SAMPA symbols are
 #' replaced with slashes(\code{/})}.
 #'
-#' @return Inserted plain text at the cursor returned by
+#' @return  Inserted plain text at the cursor returned by
 #'   \code{\link[rstudioapi]{insertText}}.
 #'
 #' @source

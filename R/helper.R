@@ -32,18 +32,13 @@ clean_dscrb <- function(x) {
 #' \code{cond_cmpl} wraps a sequence of IPA string
 #' with LaTeX code in R Markdown document when compiled
 #' to LaTeX. When compiled to HTML, returns the
-#' original sequence. Call
-#' \code{rmarkdown::draft("file.Rmd", "support_ipa", package = "linguisticsdown")}
-#' for details.
+#' original sequence.
 #'
 #' @param ipa String. A sequence of IPA symbols.
 #'
 #' @export
 cond_cmpl <- function(ipa) {
   if (knitr::opts_knit$get('rmarkdown.pandoc.to') == "latex") {
-    # header.tex:
-    # \newfontfamily\ipa{Doulos SIL}
-    # \DeclareTextFontCommand{\ipatext}{\ipa}
     ipa <- paste0("\\ipatext{", ipa, "}")
   }
   return(ipa)

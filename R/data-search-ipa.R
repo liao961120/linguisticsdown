@@ -11,7 +11,6 @@
 #' @return A data frame with 3 rows.
 #'
 #' @examples
-#' \dontrun{
 #' # Check all IPA symbols
 #' searchIPA()
 #'
@@ -20,7 +19,7 @@
 #'
 #' # Search with X-SAMPA
 #' searchIPA("_h", "xsampa")
-#' }
+#'
 #' @importFrom stringr str_detect
 #' @export
 searchIPA <- function(x = NULL , search = c("feature", "xsampa")) {

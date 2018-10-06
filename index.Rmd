@@ -34,7 +34,7 @@ devtools::install_github("liao961120/linguisticsdown")
 ## Usage
 
 
-### Write IPA symbols by Phonetic Features
+### Write IPA symbols with Phonetic Features
 
 
 ![](man/figs/features.gif){.big}

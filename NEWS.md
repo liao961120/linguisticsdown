@@ -4,4 +4,4 @@
 
 # linguisticsdown 1.0.0
 
-* Initial publish
+* Initial release

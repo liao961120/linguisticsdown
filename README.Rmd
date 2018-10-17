@@ -44,6 +44,10 @@ Visit [this site](https://liao961120.shinyapps.io/IPA-Easily-Written/) to use Sh
 
 ## To Do
 
+1. Correct IPA segments naming errors (#3)
+1. More Shiny gadget options
+    - Wrap in `/ /`, `[ ]`, or `don't wrap`
+    - Insert as decoded unicode
 1. Draw Syntax Tree
 
 

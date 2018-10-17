@@ -25,7 +25,7 @@ See **linguisticsdown** [web site](https://liao961120.github.io/linguisticsdown)
 To Do
 -----
 
-1.  Correct IPA segments naming errors ([\#3](issues/3))
+1.  Correct IPA segments naming errors ([\#3](/../../issues/3))
 2.  More Shiny gadget options
     -   Wrap in `/ /`, `[ ]`, or `don't wrap`
     -   Insert as decoded unicode

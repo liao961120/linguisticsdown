@@ -12,13 +12,13 @@ k,k,ld velar plosive
 q,q,vl uvular plosive
 ɢ,G\,vd uvular plosive
 ʔ,?,glottal plosive
-m,m,bilabial nasal
-ɱ,F,vl labiodental nasal
-n,n,alveolar nasal
-ɳ,n`,vl retroflex nasal
-ɲ,J,vl palatal nasal
-ŋ,N,vl velar nasal
-ɴ,N\,vl uvular nasal
+m,m,vd bilabial nasal
+ɱ,F,vd labiodental nasal
+n,n,vd alveolar nasal
+ɳ,n`,vd retroflex nasal
+ɲ,J,vd palatal nasal
+ŋ,N,vd velar nasal
+ɴ,N\,vd uvular nasal
 ʙ,B\,vd bilabial trill
 r,r,vd alveolar trill
 ʀ,R\,vl uvular trill

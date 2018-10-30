@@ -1,6 +1,6 @@
 # linguisticsdown 1.0.1.9999
 
-* Correct phonetic feature descriptions https://github.com/liao961120/linguisticsdown/commit/1f00cae197ba51e1d1839f6fdda674f806843561
+* Correct phonetic feature descriptions 1f00cae197ba51e1d1839f6fdda674f806843561
 
 # linguisticsdown 1.0.1
 

@@ -9,6 +9,8 @@ matrix:
   include:
     - os: osx
       osx_image: xcode10
+      before_install:
+        - curl -fLo /tmp/gfortran61.dmg https://github.com/fxcoudert/gfortran-for-macOS/releases/download/6.1/gfortran-6.1-ElCapitan.dmg
     - os: linux
       before_install:
         - sudo timedatectl set-timezone Asia/Taipei  # Set timezone to Taiwan

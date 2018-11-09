@@ -1,11 +1,4 @@
 
-## Resubmission
-This is a resubmission. In this version I have:
-
-- Write 'LaTeX', 'X-SAMPA', and 'Shiny gadgets' into single quotes
-in the Description field of the DESCRIPTION file.
-- Unwrap 'dontrun{}' in the documentation of `searchIPA()`.
-
 ## Test environments
 - ubuntu 18.04 (local), R 3.4.4
 - ubuntu 14.04 (on travis), R 3.5.0
@@ -13,11 +6,7 @@ in the Description field of the DESCRIPTION file.
 - win-builder (devel and release)
 
 ## R CMD check results
-There were no ERRORs or WARNINGs.
+There were no ERRORs, WARNINGs, or NOTEs.
 
-There was 1 NOTE:
-
-* checking CRAN incoming feasibility ... NOTE
-  Maintainer: 'Yongfu Liao <liao961120@gmail.com>'
-  
-  New submission 
+## Reverse Dependency Check
+No ERRORs or WARNINGs found

@@ -13,3 +13,4 @@
 ^cran-comments\.md$
 ^man/figs$
 ^_pkgdown\.yml$
+^revdep/$

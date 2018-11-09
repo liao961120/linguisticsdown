@@ -1,0 +1,15 @@
+development:
+  mode: auto
+navbar:
+  title: "linguisticsdown"
+  left:
+    - icon: fa-home
+      href: index.html
+    - icon: fa-search
+      text: "Reference"
+      href: reference/index.html
+    - text: "Changelog"
+      href: news/index.html
+  right:
+    - icon: fa-github
+      href: https://github.com/liao961120/linguisticsdown

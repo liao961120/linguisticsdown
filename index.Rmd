@@ -28,7 +28,9 @@ The goal of **linguisticsdown** is to support Linguistics-related doucument writ
 
 ## Installation
 ```{r eval=FALSE}
-devtools::install_github("liao961120/linguisticsdown")
+install.packages("linguisticsdown")
+#install.packages("remotes")
+remotes::install_github("liao961120/linguisticsdown")
 ```
 
 ## Usage

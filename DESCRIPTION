@@ -1,6 +1,6 @@
 Package: linguisticsdown
 Title: Easy Linguistics Document Writing with R Markdown
-Version: 1.1.0
+Version: 1.2.0
 Authors@R: 
     person(given = "Yongfu", 
            family = "Liao",

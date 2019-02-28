@@ -1,3 +1,7 @@
+# linguisticsdown 1.2.0
+
+* New function `[include_graphics2()](https://liao961120.github.io/linguisticsdown/reference/include_graphics2.html)`
+
 # linguisticsdown 1.1.0
 
 * On CRAN

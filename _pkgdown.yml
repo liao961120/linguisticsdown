@@ -8,8 +8,11 @@ navbar:
     - icon: fa-search
       text: "Reference"
       href: reference/index.html
+    - text: "Articles"
+      href: 'articles/index.html'
     - text: "Changelog"
       href: news/index.html
   right:
     - icon: fa-github
       href: https://github.com/liao961120/linguisticsdown
+

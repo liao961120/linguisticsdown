@@ -1,3 +1,4 @@
+^vignettes/include_graphics_wrapper\.Rmd$
 ^vignettes$
 ^.*\.Rproj$
 ^\.Rproj\.user$

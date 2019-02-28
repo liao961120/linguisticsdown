@@ -1,3 +1,4 @@
+^vignettes$
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^data-raw$

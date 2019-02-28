@@ -11,7 +11,7 @@
 #' inserting figures with \code{knitr::include_graphics}.
 #'
 #' @details Read more about using the function at
-#'   http://bit.ly/include_graphics2.
+#'   \link{http://bit.ly/include_graphics2}.
 #'
 #' @param path String. Path to a figure to be included. Can be either
 #'   an URL or a local path.

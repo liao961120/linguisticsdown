@@ -28,7 +28,10 @@ The goal of **linguisticsdown** is to support Linguistics-related doucument writ
 
 ## Installation
 ```{r eval=FALSE}
+# CRAN
 install.packages("linguisticsdown")
+
+# Latest
 #install.packages("remotes")
 remotes::install_github("liao961120/linguisticsdown")
 ```

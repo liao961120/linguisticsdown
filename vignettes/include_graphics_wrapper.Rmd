@@ -1,5 +1,5 @@
 ---
-title: 'A Wrapper of `knitr::include_graphics`'
+title: 'A Wrapper of knitr::include_graphics'
 subtitle: "Dealing with URL and Invalid File Type Inputs"
 author: "Yongfu Liao"
 date: "`r Sys.Date()`"

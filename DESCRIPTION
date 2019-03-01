@@ -32,4 +32,3 @@ Suggests: pkgdown,
     rmarkdown,
     testthat,
     tidyr
-VignetteBuilder: knitr

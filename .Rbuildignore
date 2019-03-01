@@ -1,5 +1,6 @@
-^vignettes/include_graphics_wrapper\.Rmd$
+^revdep$
 ^vignettes$
+^vignettes/include_graphics_wrapper\.Rmd$
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^data-raw$

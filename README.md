@@ -31,7 +31,7 @@ remotes::install_github("liao961120/linguisticsdown")
 
 Usage
 -----
-
+ 
 See **linguisticsdown** [web
 site](https://liao961120.github.io/linguisticsdown). Visit [this
 site](https://liao961120.shinyapps.io/IPA-Easily-Written/) to use Shiny

@@ -1,16 +1,16 @@
 ---
-title: 'A Wrapper of knitr::include_graphics'
-subtitle: "Dealing with URL and Invalid File Type Inputs"
+title: "A Wrapper of knitr::include_graphics"
 author: "Yongfu Liao"
 date: "`r Sys.Date()`"
-output: 
- pdf_document:
-  latex_engine: xelatex
- rmarkdown::html_vignette:
-vignette: >
-  %\VignetteIndexEntry{Vignette Title}
-  %\VignetteEncoding{UTF-8}
-  %\VignetteEngine{knitr::rmarkdown}
+urlcolor: blue
+linkcolor: red
+output:
+  pdf_document:
+    latex_engine: xelatex
+  rmarkdown::html_vignette: null
+subtitle: Dealing with URL and Invalid File Type Inputs
+vignette: |
+  %\VignetteIndexEntry{Vignette Title} %\VignetteEncoding{UTF-8} %\VignetteEngine{knitr::rmarkdown}
 ---
 
 ```{r setup, include = FALSE}
@@ -40,7 +40,6 @@ include_graphics2(png_url)
 
 ### GIF **without** `alt_path`
 ```{r}
-
 include_graphics2(gif_url)
 ```
 
@@ -67,3 +66,20 @@ include_graphics2('local.gif')
 ```{r}
 include_graphics2('local.gif', 'local_gif_static.png')
 ```
+
+`r if (knitr::is_latex_output()) paste0('<!--')`
+
+## PDF Output of this Vignette
+
+<embed src="include_graphics_wrapper.pdf" type="application/pdf" width="90%" height="420px">
+
+`r if (knitr::is_latex_output()) paste0('-->')`
+
+
+`r if (knitr::is_html_output()) paste0('<!--')`
+
+## HTML Output of this Vignette
+
+See the corresponding HTML output of this vignette at <http://bit.ly/include_graphics2>.
+
+`r if (knitr::is_html_output()) paste0('-->')`

@@ -6,7 +6,7 @@ Version](https://img.shields.io/badge/R-≥%203.4.0-blue.svg)](https://cran.r-pr
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![cran
-version](http://www.r-pkg.org/badges/version/linguisticsdown)](https://cran.r-project.org/web/packages/linguisticsdown/index.html)
+version](http://www.r-pkg.org/badges/version/linguisticsdown)](https://CRAN.R-project.org/package=linguisticsdown)
 
 linguisticsdown
 ===============
